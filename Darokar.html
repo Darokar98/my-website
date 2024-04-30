@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>People Profiles</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+
+    .profile-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 20px;
+    }
+
+    .profile {
+        width: 300px;
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        position: relative;
+    }
+
+    .profile img {
+        width: 100%;
+        border-radius: 10px;
+        z-index: 1;
+    }
+
+    .profile-content {
+        position: relative;
+        z-index: 2;
+    }
+
+    .profile h2 {
+        margin-top: 10px;
+        font-size: 1.5rem;
+        color: #333;
+        text-align: center;
+    }
+
+    .profile button {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        background-color: #3cff00;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .profile button:hover {
+        background-color: #0056b3;
+    }
+
+    /* Shapes */
+    .shape {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        opacity: 0.5;
+    }
+
+    .circle {
+        background-color: #bc1194;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+    }
+
+    .triangle {
+        width: 0;
+        height: 0;
+        border-left: 60px solid transparent;
+        border-right: 60px solid transparent;
+        border-bottom: 100px solid #0d998e;
+        transform: translate(-50%, -50%) rotate(90deg);
+        top: 50%;
+        left: 50%;
+    }
+
+    .square {
+        width: 150px;
+        height: 150px;
+        background-color: #03a323;
+        transform: translate(-50%, -50%);
+        top: 50%;
+        left: 50%;
+    }
+</style>
+</head>
+<body>
+
+<div class="profile-container">
+    <div class="profile">
+        <div class="shape circle"></div>
+        <img src="person1.jpg" alt="Member 1">
+        <div class="profile-content">
+            <h2>Rohan Darokar</h2>
+            <button onclick="window.location.href='https://www.instagram.com/rohan_darokar09?igsh=eWdsemZ6c3JtaXpu&utm'">Instagram Profile</button>
+        </div>
+    </div>
+
+    <div class="profile">
+        <div class="shape circle"></div>
+        <img src="person2.jpg" alt="Member 2">
+        <div class="profile-content">
+            <h2>Rohit Darokar</h2>
+            <button onclick="window.location.href='https://www.instagram.com/rohit_darokar?igsh=YzR6ZXdjMjFyOWIx'">Instagram Profile</button>
+        </div>
+    </div>
+
+    <div class="profile">
+        <div class="shape circle"></div>
+        <img src="person3.jpg" alt="Member 3">
+        <div class="profile-content">
+            <h2>Aditya Darokar</h2>
+            <button onclick="window.location.href='https://www.instagram.com/aditya_darokar?igsh=emIzYjFnNDY2dHhw'">Instagram Profile</button>
+        </div>
+    </div>
+
+    <div class="profile">
+        <div class="shape circle"></div>
+        <img src="person4.jpg" alt="Member 4">
+        <div class="profile-content">
+            <h2>Sanket Shamaskar </h2>
+            <button onclick="window.location.href='https://www.instagram.com/er_sanket_s?igsh=ZHVuazN4MTcyZGRi'">Instagram Profil</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+
